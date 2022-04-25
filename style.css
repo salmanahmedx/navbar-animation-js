@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.apple {
+    width: 10%;
+}
+
+ul {
+    background-color: cyan;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    margin: 1.25rem 0 0 1.25rem;
+    list-style-type: none;
+    padding: .7rem;
+    font-size: 1.65rem;
+}
+
+nav {
+    height: 100vh;
+    width: 25vw;
+    position: relative;
+}
+
+.black {
+    background-color: blueviolet;
+    width: 110%;
+    height: 100%;
+    z-index: -4;
+}
+
+.grey {
+    background-color: rgb(53, 168, 82);
+    width: 120%;
+    height: 100%;
+    z-index: -5;
+}
+
+.black,
+.grey {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
