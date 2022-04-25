@@ -1,86 +1,80 @@
+/* global */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
 
+/* nav */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+    padding: .7rem;
+    font-size: 1.45rem;
+}
+
+.nav {
+    width: 30vw;
+}
+
+ul {
+    background-color: cyan;
+    width: 20vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: .9s all ease-in-out;
+}
+
+/* hamburger */
+
+.hamburger {
+    right: 0;
+    font-size: 2rem;
+    margin: 1.5rem 3rem;
+}
+
+/* image */
+.apple {
+    width: 5vw;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
-
-.apple {
-    width: 10%;
-}
-
-ul {
-    background-color: cyan;
-    width: 106%;
     height: 100%;
-    animation: lastBox;
-    animation-duration: 1.2s;
-    /* animation-iteration-count: infinite; */
-    transition: 0.1s all ease-in-out;
-    animation-delay: .35s;
 }
 
-li {
-    list-style-type: none;
-    padding: .7rem;
-    font-size: 1.65rem;
-}
-
-nav {
-    height: 100vh;
-    width: 25vw;
-    position: relative;
-    /* transform: translateX(-120%); */
-}
+/* sliding divs */
 
 .black {
-    background-color: red;
-    width: 108%;
     height: 100%;
-    z-index: -4;
-    animation: lastBox;
-    animation-delay: .15s;
-    animation-duration: 1s;
-    /* animation-iteration-count: infinite; */
-    transition: 0.1s all ease-in-out;
+    max-width: 24vw;
+    background-color: blue;
+    transform: translateX(-100%);
+    transition: .3s all ease-in-out;
 }
 
 .grey {
-    background-color: rgb(53, 168, 82);
-    width: 110%;
     height: 100%;
-    z-index: -5;
-    animation: lastBox;
-    animation-duration: .8s;
-    /* animation-iteration-count: infinite; */
-    transition: 0.1s all ease-in-out;
+    max-width: 22vw;
+    background-color: brown;
+    transform: translateX(-100%);
+    transition: .6s all ease-in-out;
 }
 
-.black,
-.grey {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-@keyframes lastBox {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(120%);
-    }
+.visible {
+    transform: translateX(0%);
 }
