@@ -21,8 +21,13 @@ body {
 
 li {
     list-style-type: none;
-    padding: 1.5rem 2rem;
-    font-size: 1.45rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+li:hover {
+    border-bottom: 1px solid #c9d6df;
 }
 
 .nav {
@@ -34,7 +39,8 @@ ul {
     width: 20vw;
     height: 100vh;
     transform: translateX(-100%);
-    transition: 1.9s all ease-in-out;
+    transition: 1.2s all ease-in-out;
+    padding: 2rem;
 }
 
 /* hamburger */
@@ -64,7 +70,7 @@ main {
     max-width: 25vw;
     background-color: #1e2022;
     transform: translateX(-100%);
-    transition: .4s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
 
 .grey {
@@ -72,7 +78,7 @@ main {
     max-width: 21vw;
     background-color: #c9d6df;
     transform: translateX(-100%);
-    transition: .7s all ease-in-out;
+    transition: .5s all ease-in-out;
 }
 
 .dark-grey {
@@ -80,7 +86,7 @@ main {
     max-width: 22.7vw;
     background-color: #52616b;
     transform: translateX(-100%);
-    transition: 1.3s all ease-in-out;
+    transition: .8s all ease-in-out;
 }
 
 .visible {
