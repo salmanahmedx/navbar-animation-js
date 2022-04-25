@@ -21,7 +21,7 @@ body {
 
 li {
     list-style-type: none;
-    padding: .7rem;
+    padding: 1.5rem 2rem;
     font-size: 1.45rem;
 }
 
@@ -30,11 +30,11 @@ li {
 }
 
 ul {
-    background-color: cyan;
+    background-color: #f0f5f9;
     width: 20vw;
     height: 100vh;
     transform: translateX(-100%);
-    transition: .9s all ease-in-out;
+    transition: 1.9s all ease-in-out;
 }
 
 /* hamburger */
@@ -61,18 +61,26 @@ main {
 
 .black {
     height: 100%;
-    max-width: 24vw;
-    background-color: blue;
+    max-width: 25vw;
+    background-color: #1e2022;
     transform: translateX(-100%);
-    transition: .3s all ease-in-out;
+    transition: .4s all ease-in-out;
 }
 
 .grey {
     height: 100%;
-    max-width: 22vw;
-    background-color: brown;
+    max-width: 21vw;
+    background-color: #c9d6df;
     transform: translateX(-100%);
-    transition: .6s all ease-in-out;
+    transition: .7s all ease-in-out;
+}
+
+.dark-grey {
+    height: 100%;
+    max-width: 22.7vw;
+    background-color: #52616b;
+    transform: translateX(-100%);
+    transition: 1.3s all ease-in-out;
 }
 
 .visible {
